@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "About";
+}
+<h1>@ViewData["Title"]</h1>
+
+<style>
+.divTable{
+	display: table;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableCell1, .divTableHead {
+	border: 0;
+	display: table-cell;
+	padding: 3px 10px;
+	width: 100px;
+}
+.divTableCell2, .divTableHead {
+	border: 0;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableBody {
+	display: table-row-group;
+}
+</style>
+
+<div class="divTable">
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCell1">version</div>
+<div class="divTableCell2">{{ VERSION }}</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell1">build id</div>
+<div class="divTableCell2">{{ BUILD_ID }}</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell1">build date</div>
+<div class="divTableCell2">{{ BUILD_DATE }}</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell1">git commit</div>
+<div class="divTableCell2">{{ GIT_COMMIT }}</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell1">git branch</div>
+<div class="divTableCell2">{{ GIT_BRANCH }}</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell1">git url</div>
+<div class="divTableCell2">{{ GIT_URL }}</div>
+</div>
+</div>
+</div>
+
