@@ -7,3 +7,11 @@
 *.exe
 *.out
 *.app
+
+Visual Studio Code
+.vscode/
+bin/
+Debug/
+x64/
+artifact/
+dist/
