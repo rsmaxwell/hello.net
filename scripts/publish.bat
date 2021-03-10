@@ -16,5 +16,6 @@ dotnet publish hello.net.csproj --output %DIST%
 
 
 cd %DIST%
+copy ..\scripts\run.bat
 zip ..\%ARTIFACT%\hello.net.zip * 
 
